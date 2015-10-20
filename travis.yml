@@ -1,3 +1,7 @@
 language: ruby
 rvm:
-  - 2.0.0-p247
+  - 2.2.3
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+cache: bundler
